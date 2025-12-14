@@ -3,6 +3,10 @@ const db = require("./db");
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send("Bùi Mai Trâm Anh - DH52200319");
+});
+
 app.get("/users", (req, res) => {
   db.query("SELECT * FROM users", (err, results) => {
     if (err) return res.status(500).json(err);
