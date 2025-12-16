@@ -4,7 +4,7 @@ const db = require("./db");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Bùi Mai Trâm Anh - DH52200319");
+  res.send("<h1>Bùi Mai Trâm Anh - DH52200319</h1>");
 });
 
 app.get("/users", (req, res) => {
